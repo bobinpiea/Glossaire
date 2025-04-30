@@ -16,11 +16,12 @@
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte
 2.	Qu’est-ce qu’un algorithme ? 
 
-Algorithme
+    Algorithme
 
-Un algorithme, est une suite d’instructions claires et finies à suivre dans un ordre déterminé afin de résoudre un problème ou accomplir une tâche.
+    Un algorithme, est une suite d’instructions claires et finies à suivre dans un ordre déterminé afin de résoudre un problème ou accomplir une tâche.
 
-Ex : Suivre une recette de cuisine
+    Exemple :
+    Suivre une recette de cuisine
 
 3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
 4.	Qu’est-ce que la portée d’une variable ?
@@ -159,166 +160,166 @@ h.	Concaténer 2 chaînes de caractères
 ## RGPD
 104.	Qu’est-ce que le RGPD ?
 
-Le RGPD, c’est le Règlement Général sur la Protection des Données qui encadre la manière dont on collecte, stocke et utilise les données personnelles des citoyens européens.
+            Le RGPD, c’est le Règlement Général sur la Protection des Données qui encadre la manière dont on collecte, stocke et utilise les données personnelles des citoyens européens.
 
-Pourquoi ça existe ?
-	•	Renforcer les droits : chaque personne peut accéder à ses données, les faire corriger ou supprimer.
-	•	Responsabiliser : on doit documenter ce qu’on fait de ces données et ne garder que l’essentiel.
-	•	Harmoniser : des règles identiques dans tous les pays de l’UE, fini la “jungle” réglementaire.
+            Pourquoi ça existe ?
+                •	Renforcer les droits : chaque personne peut accéder à ses données, les faire corriger ou supprimer.
+                •	Responsabiliser : on doit documenter ce qu’on fait de ces données et ne garder que l’essentiel.
+                •	Harmoniser : des règles identiques dans tous les pays de l’UE, fini la “jungle” réglementaire.
 
-    Exemple
-Quand on met un formulaire d’inscription à une newsletter :
-	1.	On explique clairement à quoi serviront leurs adresses e-mail (infolettre mensuelle, promos…)
-	2.	On demande ln consentement explicite (case à cocher non pré-cochée)
-	3.	On leur dit comment ils peuvent se désabonner ou demander la suppression de leur adresse.
+                Exemple
+            Quand on met un formulaire d’inscription à une newsletter :
+                1.	On explique clairement à quoi serviront leurs adresses e-mail (infolettre mensuelle, promos…)
+                2.	On demande ln consentement explicite (case à cocher non pré-cochée)
+                3.	On leur dit comment ils peuvent se désabonner ou demander la suppression de leur adresse.
 
-C’est grâce au RGPD qu’on fait tout ça !
+            C’est grâce au RGPD qu’on fait tout ça !
 
 105.	Quel est son objectif principal ?
 
-Objectif principal
-Le RGPD a pour but de renforcer la protection des données personnelles des citoyens européens en leur redonnant le contrôle et en responsabilisant les organisations.
+            Objectif principal
+            Le RGPD a pour but de renforcer la protection des données personnelles des citoyens européens en leur redonnant le contrôle et en responsabilisant les organisations.
 
-Pour y parvenir :
-	•	Garantir la vie privée : limiter la collecte au strict nécessaire et encadrer l’usage.
-	•	Donner le pouvoir aux individus : droit d’accès, de rectification, d’effacement…
-	•	Imposer la transparence : obligations d’information et de documentation pour chaque traitement.
+            Pour y parvenir :
+                •	Garantir la vie privée : limiter la collecte au strict nécessaire et encadrer l’usage.
+                •	Donner le pouvoir aux individus : droit d’accès, de rectification, d’effacement…
+                •	Imposer la transparence : obligations d’information et de documentation pour chaque traitement.
 
-En pratique, ça signifie qu’avant de stocker un e-mail ou un nom, il faut justifier pourquoi on en a besoin, informer la personne et lui expliquer comment elle peut reprendre la main sur ses données.
+            En pratique, ça signifie qu’avant de stocker un e-mail ou un nom, il faut justifier pourquoi on en a besoin, informer la personne et lui expliquer comment elle peut reprendre la main sur ses données.
 
 
 106.	Quelle est la date d’entrée en vigueur du RGPD ?
 
-	•	25 mai 2018 : à partir de cette date, toutes les obligations du RGPD sont devenues applicables dans l’ensemble de l’UE.
+	        •	25 mai 2018 : à partir de cette date, toutes les obligations du RGPD sont devenues applicables dans l’ensemble de l’UE.
 
 107.	Quelles sont les sanctions possibles en cas de non-respect du RGPD ?
 
-En cas de manquement au RGPD, les autorités peuvent appliquer plusieurs mesures, de la plus légère à la plus lourde :
-	•	Avertissement
-Un simple rappel à l’ordre pour corriger les pratiques.
-	•	Blâme
-Une mise en garde officielle, avec obligation de se conformer sous un délai fixé.
-	•	Mise en demeure
-Ordre formel de se mettre en conformité, sous peine de sanctions financières.
-	•	Suspension ou limitation des flux de données
-Interdiction temporaire de transférer ou traiter certaines données.
-	•	Amende administrative
-Jusqu’à 10 M€ ou 2 % du chiffre d’affaires mondial pour les manquements mineurs, et jusqu’à 20 M€ ou 4 % du chiffre d’affaires mondial pour les violations les plus graves.
-	•	Publication de la décision
-Les autorités peuvent rendre publique la sanction, impactant la réputation de l’entreprise.
+            En cas de manquement au RGPD, les autorités peuvent appliquer plusieurs mesures, de la plus légère à la plus lourde :
+                •	Avertissement
+            Un simple rappel à l’ordre pour corriger les pratiques.
+                •	Blâme
+            Une mise en garde officielle, avec obligation de se conformer sous un délai fixé.
+                •	Mise en demeure
+            Ordre formel de se mettre en conformité, sous peine de sanctions financières.
+                •	Suspension ou limitation des flux de données
+            Interdiction temporaire de transférer ou traiter certaines données.
+                •	Amende administrative
+            Jusqu’à 10 M€ ou 2 % du chiffre d’affaires mondial pour les manquements mineurs, et jusqu’à 20 M€ ou 4 % du chiffre d’affaires mondial pour les violations les plus graves.
+                •	Publication de la décision
+            Les autorités peuvent rendre publique la sanction, impactant la réputation de l’entreprise.
 
-Exemple: 
-En janvier 2019, la CNIL a infligé une amende de 50 M€ à Google LLC pour :
-	1.	Manque de transparence dans le traitement des données personnelles.
-	2.	Consentement invalid​e pour le ciblage publicitaire.
+            Exemple: 
+            En janvier 2019, la CNIL a infligé une amende de 50 M€ à Google LLC pour :
+                1.	Manque de transparence dans le traitement des données personnelles.
+                2.	Consentement invalid​e pour le ciblage publicitaire.
 
-Google a dû mettre en place des bandeaux d’information clairs et revoir son mécanisme de consentement pour se mettre en conformité.
+            Google a dû mettre en place des bandeaux d’information clairs et revoir son mécanisme de consentement pour se mettre en conformité.
 
 108.	En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?
 
-CNIL (Commission Nationale de l’Informatique et des Libertés)
-	•	Qui c’est ?
-Autorité administrative indépendante chargée de veiller à la protection des données personnelles en France.
-	•	Ses missions principales :
-	•	Informer les citoyens et accompagner les organisations (guides, fiches pratiques)…
-	•	Contrôler (audits, enquêtes, vérifications sur place ou en ligne).
-	•	Sanctionner en cas de manquement (amendes, mises en demeure).
+            CNIL (Commission Nationale de l’Informatique et des Libertés)
+                •	Qui c’est ?
+            Autorité administrative indépendante chargée de veiller à la protection des données personnelles en France.
+                •	Ses missions principales :
+                •	Informer les citoyens et accompagner les organisations (guides, fiches pratiques)…
+                •	Contrôler (audits, enquêtes, vérifications sur place ou en ligne).
+                •	Sanctionner en cas de manquement (amendes, mises en demeure).
 
-Exemple : 
-la CNIL publie régulièrement des recommandations pour la gestion des cookies et a le pouvoir d’infliger des amendes si un site ne respecte pas ses préconisations.
+            Exemple : 
+            la CNIL publie régulièrement des recommandations pour la gestion des cookies et a le pouvoir d’infliger des amendes si un site ne respecte pas ses préconisations.
 
 109.	Quel est le consentement valide selon le RPGD ?
 
-Un consentement est considéré comme valide s’il est :
-	•	Libre : la personne n’est pas forcée ni influencée (pas de cases pré-cochées ni d’obligation pour accéder au service).
-	•	Spécifique : chaque finalité de traitement fait l’objet d’un consentement distinct.
-	•	Éclairé : on explique clairement pourquoi et comment on va utiliser les données (finalités, durée de conservation, droits…).
-	•	Univoque : la personne manifeste son accord par un acte positif clair (case à cocher, bouton “J’accepte” non cochés par défaut).
-	•	Retirable à tout moment : on informe sur la procédure de retrait du consentement (lien de désabonnement, contact dédié…).
+            Un consentement est considéré comme valide s’il est :
+                •	Libre : la personne n’est pas forcée ni influencée (pas de cases pré-cochées ni d’obligation pour accéder au service).
+                •	Spécifique : chaque finalité de traitement fait l’objet d’un consentement distinct.
+                •	Éclairé : on explique clairement pourquoi et comment on va utiliser les données (finalités, durée de conservation, droits…).
+                •	Univoque : la personne manifeste son accord par un acte positif clair (case à cocher, bouton “J’accepte” non cochés par défaut).
+                •	Retirable à tout moment : on informe sur la procédure de retrait du consentement (lien de désabonnement, contact dédié…).
 
-Exemple: 
+            Exemple: 
 
-Sur un formulaire de newsletter :
-	1.	Case non cochée par défaut : “Je souhaite recevoir la newsletter mensuelle.”
-	2.	Légende claire : “Vos e-mails serviront uniquement à l’envoi de notre newsletter. Vous pouvez vous désabonner à tout moment via le lien en bas de chaque mail.”
-	3.	Boutique de retrait : bouton “Envoyer” + lien “Se désabonner” visible dans chaque mail.
+            Sur un formulaire de newsletter :
+                1.	Case non cochée par défaut : “Je souhaite recevoir la newsletter mensuelle.”
+                2.	Légende claire : “Vos e-mails serviront uniquement à l’envoi de notre newsletter. Vous pouvez vous désabonner à tout moment via le lien en bas de chaque mail.”
+                3.	Boutique de retrait : bouton “Envoyer” + lien “Se désabonner” visible dans chaque mail.
 
 110.	Qu’est-ce qu’une politique de confidentialité ?
 
-Politique de confidentialité
+            Politique de confidentialité
 
-C’est le document (ou la page web) qui explique clairement :
-	•	Quelles données on collecte (nom, email, navigation, etc.)
-	•	Pourquoi on les collecte (newsletters, statistiques, amélioration du service…)
-	•	Comment on les utilise et les conserve
-	•	Qui y a accès (interne, prestataires, tiers…)
-	•	Combien de temps on les garde
-	•	Quels droits ont les utilisateurs (accès, rectification, effacement) et comment les exercer
+            C’est le document (ou la page web) qui explique clairement :
+                •	Quelles données on collecte (nom, email, navigation, etc.)
+                •	Pourquoi on les collecte (newsletters, statistiques, amélioration du service…)
+                •	Comment on les utilise et les conserve
+                •	Qui y a accès (interne, prestataires, tiers…)
+                •	Combien de temps on les garde
+                •	Quels droits ont les utilisateurs (accès, rectification, effacement) et comment les exercer
 
-Exemple: 
+            Exemple: 
 
-Sur mon site, ma politique de confidentialité indique :
-	1.	Données collectées : email, nom, IP, préférences de navigation.
-	2.	Finalité : envoi de la newsletter et suivi anonyme du trafic (Google Analytics).
-	3.	Durée de conservation : 2 ans pour les emails, 13 mois pour les logs de connexion.
-	4.	Droits : “Vous pouvez demander la suppression de vos données via contact@monsite.com ou exercer votre droit d’accès directement depuis votre espace personnel.”
+            Sur mon site, ma politique de confidentialité indique :
+                1.	Données collectées : email, nom, IP, préférences de navigation.
+                2.	Finalité : envoi de la newsletter et suivi anonyme du trafic (Google Analytics).
+                3.	Durée de conservation : 2 ans pour les emails, 13 mois pour les logs de connexion.
+                4.	Droits : “Vous pouvez demander la suppression de vos données via contact@monsite.com ou exercer votre droit d’accès directement depuis votre espace personnel.”
 
-Grâce à cette politique, l’utilisateur sait exactement ce qui se passe avec ses données et comment reprendre la main.
+            Grâce à cette politique, l’utilisateur sait exactement ce qui se passe avec ses données et comment reprendre la main.
 
 111.	Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?
 
-	•	Principe RGPD (Art. 5) : on ne conserve pas les données plus longtemps que nécessaire aux finalités du traitement.
-	•	Pas de délai universel : chaque organisation détermine sa propre durée en fonction du contexte et des obligations légales.
+                •	Principe RGPD (Art. 5) : on ne conserve pas les données plus longtemps que nécessaire aux finalités du traitement.
+                •	Pas de délai universel : chaque organisation détermine sa propre durée en fonction du contexte et des obligations légales.
 
-Quelques repères pratiques (selon la CNIL)
+            Quelques repères pratiques (selon la CNIL)
 
-	•	Journaux de connexion : 13 mois maximum
-	•	Fichiers de prospection : 3 ans sans contact
-	•	Données client (invoicing) : 10 ans (obligation fiscale)
+                •	Journaux de connexion : 13 mois maximum
+                •	Fichiers de prospection : 3 ans sans contact
+                •	Données client (invoicing) : 10 ans (obligation fiscale)
 
-Exemple : pour une newsletter, on supprime la liste d’adresses 3 ans après le dernier envoi si l’utilisateur ne se manifeste plus.
+            Exemple : pour une newsletter, on supprime la liste d’adresses 3 ans après le dernier envoi si l’utilisateur ne se manifeste plus.
 
 112.	Quels sont les droits des utilisateurs selon le RGPD ?
 
-Les personnes disposent de plusieurs droits pour reprendre le contrôle de leurs données personnelles :
-	•	Droit d’accès
-Pouvoir obtenir la copie des données qu’une organisation détient sur soi.
-	•	Droit de rectification
-Faire corriger ou compléter des données inexactes ou incomplètes.
-	•	Droit d’effacement (ou « droit à l’oubli »)
-Demander la suppression de ses données lorsque leur conservation n’est plus justifiée.
-	•	Droit à la limitation du traitement
-Suspendre temporairement l’utilisation de ses données (par exemple pendant qu’on vérifie leur exactitude).
-	•	Droit d’opposition
-S’opposer à tout moment à un traitement basé sur un intérêt légitime ou à du marketing direct.
-	•	Droit à la portabilité
-Recevoir ses données dans un format structuré et les transmettre à un autre responsable de traitement.
-	•	Droit de ne pas faire l’objet d’une décision automatisée
-Contester une décision prise uniquement sur la base d’un traitement automatisé (profilage).
+            Les personnes disposent de plusieurs droits pour reprendre le contrôle de leurs données personnelles :
+                •	Droit d’accès
+            Pouvoir obtenir la copie des données qu’une organisation détient sur soi.
+                •	Droit de rectification
+            Faire corriger ou compléter des données inexactes ou incomplètes.
+                •	Droit d’effacement (ou « droit à l’oubli »)
+            Demander la suppression de ses données lorsque leur conservation n’est plus justifiée.
+                •	Droit à la limitation du traitement
+            Suspendre temporairement l’utilisation de ses données (par exemple pendant qu’on vérifie leur exactitude).
+                •	Droit d’opposition
+            S’opposer à tout moment à un traitement basé sur un intérêt légitime ou à du marketing direct.
+                •	Droit à la portabilité
+            Recevoir ses données dans un format structuré et les transmettre à un autre responsable de traitement.
+                •	Droit de ne pas faire l’objet d’une décision automatisée
+            Contester une décision prise uniquement sur la base d’un traitement automatisé (profilage).
 
-Exemple: 
+            Exemple: 
 
-Tu veux savoir quelles infos un site e-commerce a sur toi :
-	1.	Tu envoies un e-mail à contact@site.com en mentionnant « exercice droit d’accès »
-	2.	Ils ont un mois pour t’envoyer un fichier avec toutes tes données (commandes, adresses, historiques).
-	3.	Si tu repères une erreur (mauvaise adresse), tu exerces ton droit de rectification pour la corriger.
+            Tu veux savoir quelles infos un site e-commerce a sur toi :
+                1.	Tu envoies un e-mail à contact@site.com en mentionnant « exercice droit d’accès »
+                2.	Ils ont un mois pour t’envoyer un fichier avec toutes tes données (commandes, adresses, historiques).
+                3.	Si tu repères une erreur (mauvaise adresse), tu exerces ton droit de rectification pour la corriger.
 
 
 113.	Qu’est-ce que le principe de minimisation des données selon le RGPD ?
 
-C’est l’obligation de ne collecter, traiter et conserver que les données personnelles strictement nécessaires à la finalité annoncée.
-	•	Collecte limitée : on ne demande que ce qui sert vraiment (ex. : l’email pour une newsletter, pas la date de naissance).
-	•	Durée de conservation limitée : on garde les données seulement le temps nécessaire (ex. : 3 ans après le dernier envoi pour une newsletter).
-	•	Accès restreint : seuls les services ou personnes ayant besoin de ces données y ont accès.
+            C’est l’obligation de ne collecter, traiter et conserver que les données personnelles strictement nécessaires à la finalité annoncée.
+                •	Collecte limitée : on ne demande que ce qui sert vraiment (ex. : l’email pour une newsletter, pas la date de naissance).
+                •	Durée de conservation limitée : on garde les données seulement le temps nécessaire (ex. : 3 ans après le dernier envoi pour une newsletter).
+                •	Accès restreint : seuls les services ou personnes ayant besoin de ces données y ont accès.
 
-Exemple:
+            Exemple:
 
-Formulaire d’abonnement à une newsletter :
-	1.	On ne demande que l’email.
-	2.	On supprime l’adresse au bout de 3 ans d’inactivité.
-	3.	Seul le service marketing peut consulter cette liste.
+            Formulaire d’abonnement à une newsletter :
+                1.	On ne demande que l’email.
+                2.	On supprime l’adresse au bout de 3 ans d’inactivité.
+                3.	Seul le service marketing peut consulter cette liste.
 
-Rappel rapide : minimiser collecte, durée et accès = moins de risques pour les utilisateurs et conformité assurée.
+            Rappel rapide : minimiser collecte, durée et accès = moins de risques pour les utilisateurs et conformité assurée.
 
 
 ## SEO
