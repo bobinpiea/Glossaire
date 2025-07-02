@@ -14,23 +14,89 @@
 
 ## Général
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte
-2.	Qu’est-ce qu’un algorithme ? 
 
-    Algorithme
+        Pour exécuter un script PHP, il faut deux éléments essentiels :
+            1.	Un serveur web
+                → C’est un programme (comme Apache ou Nginx) qui reçoit les requêtes envoyées par un navigateur,
+                → traite la demande,
+                → puis renvoie le résultat (page HTML, image, JSON…).
 
-    Un algorithme, est une suite d’instructions claires et finies à suivre dans un ordre déterminé afin de résoudre un problème ou accomplir une tâche.
+            Exemples de serveurs web :
+            •	Apache
+            •	Nginx
 
-    Exemple :
-    Suivre une recette de cuisine
+            2.	Un interpréteur PHP
+                → C’est le programme qui lit le code PHP,
+                → exécute les instructions,
+                → et produit un résultat (souvent en HTML) que le serveur web transmet ensuite au navigateur.
+
+        Logiciels qui regroupent tout cet environnement
+
+            Certains logiciels installent Apache + PHP + MySQL dans un seul pack, et permettent de lancer facilement un environnement local :
+                •	MAMP (très utilisé sur Mac)
+                •	XAMPP (disponible sur Windows, macOS et Linux)
+
+        MOTS CLÉS :
+            •	Serveur web → reçoit – traite – renvoie
+            •	Interpréteur PHP → lit – exécute – génère
+            •	MAMP / XAMPP → environnement complet pour exécuter PHP en local
+
+2.	Qu’est-ce qu’un algorithme ?  
+
+    Un algorithme, c’est une suite d’instructions (précises), qu’on suit étape par étape, dans un ordre logique, pour résoudre un problème ou arriver à un résultat.
+    Il peut y avoir des boucles, des conditions… mais il doit toujours finir.
+        
+        MOTS CLES : INSTRUCTION - ETAPE - PB ou RESULTAT
 
 3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
+
+        Une variable, c’est un nom qu’on donne à une donnée pour la stocker en mémoire et pouvoir la réutiliser ou la modifier plus tard.
+        Elle peut contenir du texte, un nombre, une date, un tableau, etc.
+        En PHP, toutes les variables commencent par le symbole $.
+            
+            MOTS CLÉS : nom – donnée – mémoire – réutiliser / modifier – $
+
 4.	Qu’est-ce que la portée d’une variable ?
+
+    La portée d’une variable, c’est l’endroit du code où elle “vit” et où on peut l’utiliser.
+        •	Si elle est déclarée en dehors d’une fonction, on dit qu’elle est globale.
+        •	Si elle est déclarée dans une fonction, elle est locale (visible uniquement dans cette fonction).
+
+    Et si on veut utiliser une variable globale à l’intérieur d’une fonction, on doit l’appeler avec le mot global au début de la fonction.
+        
+        MOTS CLÉS : portée – globale – locale – fonction – global
+
 5.	Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
+
+    Une constante, c’est comme une variable : c’est un nom qu’on donne à une donnée.
+    Mais sa valeur ne change jamais : elle est fixe du début à la fin du script.
+    On ne met pas de $ devant une constante.
+    Et pour la créer, on utilise define() ou const.
+
+    MOTS CLÉS : constante – valeur fixe – pas de $ (– define – const – ≠ variable)
+
 6.	Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation 
+
+en loccurance une super gbloable est une fonction native 
+
+
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
+
+
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
+
+oui il existe plusieurs types de tableaux en php notamment 
+les tableau. dit sompl e
+tableaux associatif
+et les tableau imbriqué 
+
+
 9.	Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles
+
+
 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
+
+
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
 13.	Quelle est la différence entre les instructions « require » et « include » en PHP
@@ -70,13 +136,75 @@
 
 ## Programmation orientée objet (POO)
 43.	Donner une définition de la programmation orientée objet 
+
+    La programmation orientée objet (POO), c’est une façon d’écrire du code en voyant chaque chose comme un “objet”, un peu comme dans la vraie vie.
+    Chaque objet a ses propres infos (attributs) et peut faire ses propres actions (méthodes).
+    Ça permet de mieux organiser son code, surtout quand il devient gros, et/ou complexe.
+
+    MOTS CLÉS : Objet – Attribut – Méthode – Organiser le code
+
 44.	Qu’est-ce qu’une classe ? Comment la déclare-t-on ?
+
+Une classe, c’est comme un plan ou un moule qu’on utilise pour fabriquer des objets.
+Elle contient les informations (attributs) et les actions possibles (méthodes).
+Une fois qu’on a une classe, on peut créer plein d’objets à partir d’elle, un peu comme une recette qu’on suit plusieurs fois.
+
+Déclaration :
+On déclare une classe en PHP avec le mot-clé class, suivi du nom de la classe.
+
+Exemple : 
+
+class MaClasse {
+    //  je mets les attributs et méthodes ici
+}
+
 45.	Qu’est-ce qu’un objet ?
+
+Un objet, c’est ce qu’on crée à partir d’une classe (l’instanciation).
+C’est une chose "physique" qui peut utiliser les méthodes et les attributs de la classe dans laquelle il a été créé.
+Chaque objet peut avoir ses propres valeurs, même s’il vient du même moule.
+
+MOTS CLÉS : objet – instanciation – classe – utiliser – méthode – attribut
+
 46.	Définir la notion de propriété / attribut / méthode
+
+Un attribut, c’est une variable déclarée dans une classe.
+Quand cette variable est accessible depuis l’extérieur (avec un getter ou un setter), on parle de propriété.
+
+Une méthode, c’est une fonction écrite dans une classe.
+Elle sert à faire une action avec les données de l’objet (comme afficher, calculer, modifier…).
+
+MOTS-CLÉS :
+	•	Attribut = variable interne à la classe
+	•	Propriété = version accessible (via getter/setter)
+	•	Méthode = action d’un objet ou d’une classe
+	•	CLASSE = contient attributs + méthodes
+    
 47.	Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité
+
+Brouillon 
+
+La visibilité d’une méthode serait sa faculté à être visible selon certains endroits.
+Privée : dans la classe uniquement.
+Publique : à l’extérieur de la classe.
+Protégée : en cas d’héritage.
+
+
 48.	Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
+
+A continuer
+
+le constructeur 
+
 49.	Qu’est-ce que l’encapsulation ?
+
 50.	Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple
+
+Brouillon 
+La conception clé est l’héritage, c’est-à-dire qu’on a une classe parente et qu’on veut créer une classe enfant.
+Dès lors, afin que cette dernière ait ses attributs et ses fonctions, on doit alors utiliser le terme “extends” pour dire qu’elle hérite des données qu’il y a à l’intérieur.
+
+
 51.	Définir l’opérateur de résolution de portée
 52.	Définir une méthode / propriété statique
 53.	Définir le polymorphisme en POO
@@ -155,172 +283,19 @@ h.	Concaténer 2 chaînes de caractères
 100.	Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage
 101.	Qu’est-ce qu’une politique de mots de passe forts ?
 102.	Qu’est-ce que l’hameçonnage ?
-103.	Définir la « validation des entrées » 
+103.	Définir la « validation des entrées »
 
 ## RGPD
 104.	Qu’est-ce que le RGPD ?
-
-            Le RGPD, c’est le Règlement Général sur la Protection des Données qui encadre la manière dont on collecte, stocke et utilise les données personnelles des citoyens européens.
-
-            Pourquoi ça existe ?
-                •	Renforcer les droits : chaque personne peut accéder à ses données, les faire corriger ou supprimer.
-                •	Responsabiliser : on doit documenter ce qu’on fait de ces données et ne garder que l’essentiel.
-                •	Harmoniser : des règles identiques dans tous les pays de l’UE, fini la “jungle” réglementaire.
-
-                Exemple
-            Quand on met un formulaire d’inscription à une newsletter :
-                1.	On explique clairement à quoi serviront leurs adresses e-mail (infolettre mensuelle, promos…)
-                2.	On demande ln consentement explicite (case à cocher non pré-cochée)
-                3.	On leur dit comment ils peuvent se désabonner ou demander la suppression de leur adresse.
-
-            C’est grâce au RGPD qu’on fait tout ça !
-
 105.	Quel est son objectif principal ?
-
-            Objectif principal
-            Le RGPD a pour but de renforcer la protection des données personnelles des citoyens européens en leur redonnant le contrôle et en responsabilisant les organisations.
-
-            Pour y parvenir :
-                •	Garantir la vie privée : limiter la collecte au strict nécessaire et encadrer l’usage.
-                •	Donner le pouvoir aux individus : droit d’accès, de rectification, d’effacement…
-                •	Imposer la transparence : obligations d’information et de documentation pour chaque traitement.
-
-            En pratique, ça signifie qu’avant de stocker un e-mail ou un nom, il faut justifier pourquoi on en a besoin, informer la personne et lui expliquer comment elle peut reprendre la main sur ses données.
-
-
 106.	Quelle est la date d’entrée en vigueur du RGPD ?
-
-	        •	25 mai 2018 : à partir de cette date, toutes les obligations du RGPD sont devenues applicables dans l’ensemble de l’UE.
-
 107.	Quelles sont les sanctions possibles en cas de non-respect du RGPD ?
-
-            En cas de manquement au RGPD, les autorités peuvent appliquer plusieurs mesures, de la plus légère à la plus lourde :
-                •	Avertissement
-            Un simple rappel à l’ordre pour corriger les pratiques.
-                •	Blâme
-            Une mise en garde officielle, avec obligation de se conformer sous un délai fixé.
-                •	Mise en demeure
-            Ordre formel de se mettre en conformité, sous peine de sanctions financières.
-                •	Suspension ou limitation des flux de données
-            Interdiction temporaire de transférer ou traiter certaines données.
-                •	Amende administrative
-            Jusqu’à 10 M€ ou 2 % du chiffre d’affaires mondial pour les manquements mineurs, et jusqu’à 20 M€ ou 4 % du chiffre d’affaires mondial pour les violations les plus graves.
-                •	Publication de la décision
-            Les autorités peuvent rendre publique la sanction, impactant la réputation de l’entreprise.
-
-            Exemple: 
-            En janvier 2019, la CNIL a infligé une amende de 50 M€ à Google LLC pour :
-                1.	Manque de transparence dans le traitement des données personnelles.
-                2.	Consentement invalid​e pour le ciblage publicitaire.
-
-            Google a dû mettre en place des bandeaux d’information clairs et revoir son mécanisme de consentement pour se mettre en conformité.
-
 108.	En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?
-
-            CNIL (Commission Nationale de l’Informatique et des Libertés)
-                •	Qui c’est ?
-            Autorité administrative indépendante chargée de veiller à la protection des données personnelles en France.
-                •	Ses missions principales :
-                •	Informer les citoyens et accompagner les organisations (guides, fiches pratiques)…
-                •	Contrôler (audits, enquêtes, vérifications sur place ou en ligne).
-                •	Sanctionner en cas de manquement (amendes, mises en demeure).
-
-            Exemple : 
-            la CNIL publie régulièrement des recommandations pour la gestion des cookies et a le pouvoir d’infliger des amendes si un site ne respecte pas ses préconisations.
-
 109.	Quel est le consentement valide selon le RPGD ?
-
-            Un consentement est considéré comme valide s’il est :
-                •	Libre : la personne n’est pas forcée ni influencée (pas de cases pré-cochées ni d’obligation pour accéder au service).
-                •	Spécifique : chaque finalité de traitement fait l’objet d’un consentement distinct.
-                •	Éclairé : on explique clairement pourquoi et comment on va utiliser les données (finalités, durée de conservation, droits…).
-                •	Univoque : la personne manifeste son accord par un acte positif clair (case à cocher, bouton “J’accepte” non cochés par défaut).
-                •	Retirable à tout moment : on informe sur la procédure de retrait du consentement (lien de désabonnement, contact dédié…).
-
-            Exemple: 
-
-            Sur un formulaire de newsletter :
-                1.	Case non cochée par défaut : “Je souhaite recevoir la newsletter mensuelle.”
-                2.	Légende claire : “Vos e-mails serviront uniquement à l’envoi de notre newsletter. Vous pouvez vous désabonner à tout moment via le lien en bas de chaque mail.”
-                3.	Boutique de retrait : bouton “Envoyer” + lien “Se désabonner” visible dans chaque mail.
-
 110.	Qu’est-ce qu’une politique de confidentialité ?
-
-            Politique de confidentialité
-
-            C’est le document (ou la page web) qui explique clairement :
-                •	Quelles données on collecte (nom, email, navigation, etc.)
-                •	Pourquoi on les collecte (newsletters, statistiques, amélioration du service…)
-                •	Comment on les utilise et les conserve
-                •	Qui y a accès (interne, prestataires, tiers…)
-                •	Combien de temps on les garde
-                •	Quels droits ont les utilisateurs (accès, rectification, effacement) et comment les exercer
-
-            Exemple: 
-
-            Sur mon site, ma politique de confidentialité indique :
-                1.	Données collectées : email, nom, IP, préférences de navigation.
-                2.	Finalité : envoi de la newsletter et suivi anonyme du trafic (Google Analytics).
-                3.	Durée de conservation : 2 ans pour les emails, 13 mois pour les logs de connexion.
-                4.	Droits : “Vous pouvez demander la suppression de vos données via contact@monsite.com ou exercer votre droit d’accès directement depuis votre espace personnel.”
-
-            Grâce à cette politique, l’utilisateur sait exactement ce qui se passe avec ses données et comment reprendre la main.
-
 111.	Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?
-
-                •	Principe RGPD (Art. 5) : on ne conserve pas les données plus longtemps que nécessaire aux finalités du traitement.
-                •	Pas de délai universel : chaque organisation détermine sa propre durée en fonction du contexte et des obligations légales.
-
-            Quelques repères pratiques (selon la CNIL)
-
-                •	Journaux de connexion : 13 mois maximum
-                •	Fichiers de prospection : 3 ans sans contact
-                •	Données client (invoicing) : 10 ans (obligation fiscale)
-
-            Exemple : pour une newsletter, on supprime la liste d’adresses 3 ans après le dernier envoi si l’utilisateur ne se manifeste plus.
-
 112.	Quels sont les droits des utilisateurs selon le RGPD ?
-
-            Les personnes disposent de plusieurs droits pour reprendre le contrôle de leurs données personnelles :
-                •	Droit d’accès
-            Pouvoir obtenir la copie des données qu’une organisation détient sur soi.
-                •	Droit de rectification
-            Faire corriger ou compléter des données inexactes ou incomplètes.
-                •	Droit d’effacement (ou « droit à l’oubli »)
-            Demander la suppression de ses données lorsque leur conservation n’est plus justifiée.
-                •	Droit à la limitation du traitement
-            Suspendre temporairement l’utilisation de ses données (par exemple pendant qu’on vérifie leur exactitude).
-                •	Droit d’opposition
-            S’opposer à tout moment à un traitement basé sur un intérêt légitime ou à du marketing direct.
-                •	Droit à la portabilité
-            Recevoir ses données dans un format structuré et les transmettre à un autre responsable de traitement.
-                •	Droit de ne pas faire l’objet d’une décision automatisée
-            Contester une décision prise uniquement sur la base d’un traitement automatisé (profilage).
-
-            Exemple: 
-
-            Tu veux savoir quelles infos un site e-commerce a sur toi :
-                1.	Tu envoies un e-mail à contact@site.com en mentionnant « exercice droit d’accès »
-                2.	Ils ont un mois pour t’envoyer un fichier avec toutes tes données (commandes, adresses, historiques).
-                3.	Si tu repères une erreur (mauvaise adresse), tu exerces ton droit de rectification pour la corriger.
-
-
 113.	Qu’est-ce que le principe de minimisation des données selon le RGPD ?
-
-            C’est l’obligation de ne collecter, traiter et conserver que les données personnelles strictement nécessaires à la finalité annoncée.
-                •	Collecte limitée : on ne demande que ce qui sert vraiment (ex. : l’email pour une newsletter, pas la date de naissance).
-                •	Durée de conservation limitée : on garde les données seulement le temps nécessaire (ex. : 3 ans après le dernier envoi pour une newsletter).
-                •	Accès restreint : seuls les services ou personnes ayant besoin de ces données y ont accès.
-
-            Exemple:
-
-            Formulaire d’abonnement à une newsletter :
-                1.	On ne demande que l’email.
-                2.	On supprime l’adresse au bout de 3 ans d’inactivité.
-                3.	Seul le service marketing peut consulter cette liste.
-
-            Rappel rapide : minimiser collecte, durée et accès = moins de risques pour les utilisateurs et conformité assurée.
-
 
 ## SEO
 114.	Qu’est-ce que le SEO ? 
