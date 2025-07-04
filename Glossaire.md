@@ -263,15 +263,51 @@ h.	Concaténer 2 chaînes de caractères
 
 ## Symfony
 84.	Qu’est-ce que Symfony ?
+
+symfony est une framework php q
+
+
 85.	Sur quel langage de programmation et design pattern repose Symfony ? 
+
+langage de programmation phph et le design pattern est le MVC
+
+
+
 86.	Quelle est la dernière version en date de Symfony ?
+
+
+
+
+
 87.	Qu’est-ce qu’un bundle ? 
+
+
+
+
 88.	Quel est le moteur de template utilisé par défaut dans Symfony ?
+
+
+
 89.	Qu’est-ce qu’un ORM ? Quel est son utilité et comment s’appelle-t-il au sein de Symfony ?
+
+
+
 90.	Qu’est-ce que l’injection de dépendances ? Quel est l’outil utilisé dans ce contexte et quel fichier contient l’intégralité des dépendances du projet ?
+
+
+
 91.	Que permet le bundle Maker au sein de Symfony ? 
+
+
+
 92.	Quel est le langage de requêtage exploité au sein d’un projet Symfony ?
+
+
+
 93.	Quel est le composant qui garantit l’authentification et l’autorisation des utilisateurs ?
+
+
+
 
 ## Sécurité
 94.	Qu’est-ce que l’injection SQL ? Comment s’en prémunir ?
