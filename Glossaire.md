@@ -27,14 +27,14 @@
 
             2.	Un interpréteur PHP
                 → C’est le programme qui lit le code PHP,
-                → exécute les instructions,
-                → et produit un résultat (souvent en HTML) que le serveur web transmet ensuite au navigateur.
+                → Exécute les instructions,
+                → Produit un résultat (souvent en HTML) que le serveur web transmet ensuite au navigateur.
 
         Logiciels qui regroupent tout cet environnement
 
             Certains logiciels installent Apache + PHP + MySQL dans un seul pack, et permettent de lancer facilement un environnement local :
-                •	MAMP (très utilisé sur Mac)
-                •	XAMPP (disponible sur Windows, macOS et Linux)
+                •	MAMP (Utilisé sur Mac)
+                •	XAMPP (Disponible sur Windows, macOS et Linux)
 
         MOTS CLÉS :
             •	Serveur web → reçoit – traite – renvoie
@@ -43,7 +43,7 @@
 
 2.	Qu’est-ce qu’un algorithme ?  
 
-    Un algorithme, c’est une suite d’instructions (précises), qu’on suit étape par étape, dans un ordre logique, pour résoudre un problème ou arriver à un résultat.
+    Un algorithme, c’est une suite d’instructions (finies), qu’on suit étape par étape, dans un ordre logique, pour résoudre un problème ou arriver à un résultat.
     Il peut y avoir des boucles, des conditions… mais il doit toujours finir.
         
         MOTS CLES : INSTRUCTION - ETAPE - PB ou RESULTAT
