@@ -33,7 +33,7 @@
         Logiciels qui regroupent tout cet environnement
 
             Certains logiciels installent Apache + PHP + MySQL dans un seul pack, et permettent de lancer facilement un environnement local :
-                •	MAMP (Utilisé sur Mac)
+                •	MAMP (Utilisé le plus souvent sur Mac)
                 •	XAMPP (Disponible sur Windows, macOS et Linux)
 
         MOTS CLÉS :
