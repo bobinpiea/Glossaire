@@ -43,7 +43,7 @@
 
 2.	Qu’est-ce qu’un algorithme ?  
 
-    Un algorithme, c’est une suite d’instructions (finies), qu’on suit étape par étape, dans un ordre logique, pour résoudre un problème ou arriver à un résultat.
+    Un algorithme, c’est une suite d’instructions (finies), qu’on suit étape par étape, dans un ordre logique/déterminé, afin de  résoudre un problème ou arriver à un résultat.
     Il peut y avoir des boucles, des conditions… mais il doit toujours finir.
         
         MOTS CLES : INSTRUCTION - ETAPE - PB ou RESULTAT
@@ -77,25 +77,129 @@
 
 6.	Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation 
 
-en loccurance une super gbloable est une fonction native 
+    Une superglobale, c’est une variable spéciale de PHP, qui est disponible partout dans le code (dans une fonction, une classe, etc.) sans avoir besoin de la déclarer.
+
+    Ces variables sont pré-définies par PHP, et elles servent à récupérer des infos importantes : données envoyées par un formulaire, paramètres dans l’URL, fichiers, session, cookies, etc.
+
+    Il en existe 9 principales :
+	$_GET, $_POST, $_SESSION, $_COOKIE, $_SERVER, $_FILES, $_ENV, $_REQUEST, $_GLOBALS
+
+        Exemple d’utilisation :
+        echo $_GET['nom']; 
+
+        MOTS CLÉS :
+            •	Superglobale = variable spéciale PHP
+            •	Accessible partout
+            •	Pas besoin de déclaration
+            •	Sert à récupérer données ou infos système (GET, POST, etc.)
 
 
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
 
+    Un type primitif, c’est le type de valeur que peut contenir une variable.
+        Exemple : 
+        string → une chaîne de caractères (du texte)
+        integer → un nombre entier
+        float (ou double) → un nombre à virgule
+        boolean → soit true (vrai), soit false (faux)
+        array → un tableau (plusieurs valeurs dans une même variable)
+        null → une variable qui ne contient rien (pas encore de valeur)
+
+        Soit 6 ! 
+
+        MOTS CLÉS : type – valeur – string – integer – float – boolean – array – null
+
 
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
 
-oui il existe plusieurs types de tableaux en php notamment 
-les tableau. dit sompl e
-tableaux associatif
-et les tableau imbriqué 
+    Oui, en PHP, il existe plusieurs types de tableaux selon la façon dont les données sont organisées :
 
+    Tableau simple (ou indexé)
+    → Les éléments sont rangés dans un ordre, avec des indices numériques (0, 1, 2…)
+     Ex: 
+     $jours = ["lundi", "mardi", "mercredi"];
+
+	Tableau associatif
+    → Chaque élément est associé à une clé personnalisée (au lieu d’un chiffre).
+        $utilisateur = ["
+            nom" => "Pierre", 
+            "age" => 30
+            ];
+
+	Tableau multidimensionnel (ou imbriqué)
+    → C’est un tableau dans un tableau, utile pour organiser des données complexes.
+        $produits = [
+            ["nom" => "Livre", "prix" => 10],
+            ["nom" => "Stylo", "prix" => 2]
+        ];
+
+    MOTS CLÉS : tableau – simple – associatif – multidimensionnel – clé – valeur – index
 
 9.	Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles
 
+        Une structure de contrôle, c’est ce qui permet à ton code de :
+            •	faire un choix (if / else)
+            •	répéter des actions (boucles)
+            •	gérer plusieurs cas (switch)
+
+
+    Une structure de contrôle, c’est un outil qui permet de contrôler le déroulement du programme :
+    On peut en citer 3 
+
+    1. La condition → “Si quelque chose est vrai, alors on fait ça…”
+
+        Permet de prendre une décision selon un cas.
+
+        if ($age >= 18) {
+            echo "Majeur";
+        } else {
+            echo "Mineur";
+        }
+
+    2. La boucle (répétition) → “Tant que ce n’est pas fini, je continue…”
+
+        Permet de répéter une action plusieurs fois.
+
+        Exemples de boucles :
+            •	while (tant que)
+            •	for (pour un nombre défini de fois)
+            •	foreach (pour parcourir un tableau)
+
+        for ($i = 1; $i <= 3; $i++) {
+            echo "Tour $i\n";
+        }
+
+    3. L’alternative multiple (switch) → “Si c’est le cas 1, je fais ça ; si c’est le cas 2, je fais ça…”
+
+        Permet de gérer plusieurs cas possibles.
+
+            $note = 15;
+
+            switch ($note) {
+                case 20:
+                    echo "Excellent";
+                    break;
+                case 10:
+                    echo "Moyen";
+                    break;
+                default:
+                    echo "Autre";
+            }
+
+        MOTS CLÉS : condition – boucle – répétition – choix – if – for – while – switch
 
 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
 
+    strlen()
+
+    On utilise la fonction strlen().
+    Elle te renvoie un nombre qui te dit combien de caractères il y a dans ta chaîne.
+
+    Exemple : 
+    $nom = "Pierre";
+    echo strlen($nom); // Affiche 6
+
+    MOTS CLÉS : longueur – chaîne – texte – strlen() – nombre de caractères
 
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
