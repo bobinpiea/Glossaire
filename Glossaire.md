@@ -45,6 +45,8 @@
 
     Un algorithme, c’est une suite d’instructions (finies), qu’on suit étape par étape, dans un ordre logique/déterminé, afin de  résoudre un problème ou arriver à un résultat.
     Il peut y avoir des boucles, des conditions… mais il doit toujours finir.
+
+    Exemple : Recette de cuisine 1- Ingrédient 2- Ustensile 3-Melange 4-Préparation
         
         MOTS CLES : INSTRUCTION - ETAPE - PB ou RESULTAT
 
@@ -54,7 +56,7 @@
         Elle peut contenir du texte, un nombre, une date, un tableau, etc.
         En PHP, toutes les variables commencent par le symbole $.
             
-            MOTS CLÉS : nom – donnée – mémoire – réutiliser / modifier – $
+            MOTS CLÉS : nom – donnée – mémoire – réutiliser / modifier – 
 
 4.	Qu’est-ce que la portée d’une variable ?
 
