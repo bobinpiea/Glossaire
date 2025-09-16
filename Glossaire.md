@@ -204,10 +204,87 @@
     MOTS CLÉS : longueur – chaîne – texte – strlen() – nombre de caractères
 
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
+
+    Une session, c'est un moyen de garder des informations sur un utilisateur pendant qu'il navigue sur notre site. 
+    PHP crée un identifiant unique pour chaque visiteur et peut stocker des données côté serveur qui restent accessibles d'une page à l'autre.
+    → Contrairement aux cookies (stockés chez le client), les sessions stockent les données sur le serveur.
+    Pour démarrer une session : session_start() (à mettre au tout début du script, avant tout HTML !)
+
+    Ex: session_start();
+        $_SESSION['nom'] = 'Paul';  // stocker une donnée
+        echo $_SESSION['nom'];       // récupérer la donnée sur une autre page
+
+    Exemple concret : Quand Je me connectes sur Facebook, mes infos (nom, id...) sont stockées dans une session. 
+    Comme ça je reste connecté en naviguant de page en page.
+    
+    MOTS CLÉS : session – session_start() – $_SESSION – stockage serveur – navigation   
+
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
+
+    Un cookie, c'est un petit fichier texte stocké dans le navigateur de l'utilisateur (côté client). 
+    Contrairement aux sessions (côté serveur), les cookies restent sur l'ordi/téléphone du visiteur, même après avoir fermé le navigateur.
+    → On s'en sert pour garder des préférences, un panier d'achat, ou reconnaître un utilisateur qui revient.
+
+    MOTS CLÉS : cookie – côté client – setcookie() – $_COOKIE – préférences – navigateur
+
+    La différence importante avec session : session = serveur, cookie = navigateur !
+
 13.	Quelle est la différence entre les instructions « require » et « include » en PHP
+
+    Les deux servent à inclure un fichier PHP dans un autre (genre pour réutiliser du code), mais ils réagissent différemment en cas de problème :
+    include :
+    → Si le fichier n'existe pas, PHP affiche un warning (avertissement)
+    → MAIS le script continue quand même !
+    require :
+    → Si le fichier n'existe pas, PHP affiche une erreur fatale
+    → Et le script S'ARRÊTE complètement !
+
+        Exemple concret :
+        phpinclude 'menu.php';     // Si menu.php n'existe pas → warning mais la page continue
+        require 'config.php';   // Si config.php n'existe pas → STOP, page blanche !
+        
+    Astuce pour retenir :
+
+    require = "j'ai BESOIN de ce fichier" (required = obligatoire)
+    include = "ce serait bien de l'avoir mais c'est pas grave"
+
+    On utilise require pour les fichiers critiques (connexion BDD, config...) et include pour le moins important (footer, pub...).
+    MOTS CLÉS : include – warning – continue / require – erreur fatale – stop
+
+
 14.	Comment effectuer une redirection en PHP ?
+
+    Pour rediriger vers une autre page en PHP, on utilise la fonction header() avec Location:
+
+    Syntaxe :
+    phpheader('Location: page.php');
+    exit();  // Important ! Toujours mettre exit() après
+
+    Pourquoi exit() ? Pour arrêter le script immédiatement après la redirection, sinon le code continue de s'exécuter !
+
+    MOTS CLÉS : header() – Location – exit() – redirection – avant HTML
+
 15.	Définir la partie « front-end » et « back-end » d’une application
+
+    Front-end :
+    → C'est ce qu'on voit et ce avec quoi on interagit sur un site
+    → L'interface, le design, les menus, tout le côté visuel
+    → Langages : HTML, CSS, JavaScript
+    → La partie "visible" de l'application
+    Back-end :
+    → C'est ce qu'on ne voit pas, le cerveau de l'application
+    → Tout ce qui tourne sur le serveur : calculs, stockage, sécurité
+    → Langages : PHP, Python, Java, Node.js...
+    → La partie "invisible" qui fait fonctionner le tout
+    Exemple simple :
+    Quand on se connecte sur un site :
+
+    Front : Le formulaire avec les champs login/mot de passe
+    Back : La vérification du mot de passe dans la base de données
+
+    MOTS CLÉS : front = ce qu'on voit | back = ce qu'on ne voit pas (le cerveau)
+
+
 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples
 
