@@ -286,19 +286,187 @@
 
 
 16.	Définir le contrôle de version ? Qu’est-ce que Git ?
+
+    Le contrôle de version :
+        → C'est un système qui enregistre toutes les modifications de mon code au fil du temps
+        → Je peux voir tout l'historique de mon projet depuis le début
+        → Si je fais une erreur, je peux revenir à une version précédente qui fonctionnait
+    Git :
+        → C'est le logiciel de contrôle de version le plus populaire
+        → Il permet de sauvegarder mon travail étape par étape
+        → Je peux collaborer avec d'autres sans qu'on écrase le travail de chacun
+    Exemple :
+    Je développe un site web :
+
+    Je sauvegarde ma version stable avec git commit
+    J'ajoute une nouvelle fonctionnalité qui crée des bugs
+    Je peux facilement revenir à ma version stable d'avant
+
+    Comparaison :
+    C'est comme les points de sauvegarde dans un jeu → je sauvegarde avant un passage difficile pour pouvoir recommencer si besoin
+    Commandes essentielles :
+
+    git add → sélectionner les fichiers à sauvegarder
+    git commit → créer un point de sauvegarde
+    git push → envoyer sur GitHub/GitLab
+
+    MOTS CLÉS : contrôle de version – historique – Git – sauvegarde – collaboration – commit
+
 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples
+
+    Un CMS (Content Management System) :
+    → C'est un système de gestion de contenu en français
+    → C'est un logiciel qui permet de créer et gérer un site web sans coder
+    → Tout se fait avec une interface visuelle : j'ajoute du texte, des images, je crée des pages...
+    → Pas besoin de toucher au HTML/CSS/PHP, le CMS s'occupe de tout
+    
+    Exemples de CMS :
+    WordPress → Le plus populaire, 40% des sites web l'utilisent
+    Joomla → Plus complexe mais plus flexible
+    Drupal → Pour les gros sites avec beaucoup de contenu
+    Shopify → Spécialisé pour les boutiques en ligne
+    Wix → Super simple, tout se fait en glisser-déposer
+
+    Exemple :
+    Au lieu de coder mon blog from scratch, j'installe WordPress :
+
+    Je choisis un thème (le design)
+    J'écris mes articles dans un éditeur (comme Word)
+    WordPress génère tout le code automatiquement
+
+    Avantage : Rapide et facile pour créer un site
+    Inconvénient : Moins de liberté qu'en codant tout soi-même
+    MOTS CLÉS : CMS – gestion contenu – sans coder – WordPress – Joomla – interface visuelle
+
 
 ## Front-end
 18.	Définir HTML
+
+    HTML (HyperText Markup Language) :
+    → C'est le langage de base pour créer la structure d'une page web
+    → Ce n'est pas un langage de programmation, c'est un langage de balisage
+    → Il définit le squelette de la page : titres, paragraphes, liens, images, formulaires...
+    → Tout se fait avec des balises qui entourent le contenu
+
+            Analogie :
+        HTML = la structure de la maison (murs, portes, fenêtres)
+        CSS = la décoration (peinture, style)
+        JavaScript = l'électricité (interactivité)
+
+        MOTS CLÉS : HTML – structure – balises – squelette – page web – langage de balisage
+
 19.	Définir CSS
+
+        CSS (Cascading Style Sheets) :
+        → C'est le langage qui gère tout l'aspect visuel et la mise en forme d'une page web
+        → Il donne du style au HTML : couleurs, polices, tailles, espacements, animations...
+        → CSS sépare le contenu (HTML) de la présentation (le design)
+        → Une seule feuille CSS peut styliser tout un site
+
+        MOTS CLÉS : CSS – style – design – couleurs – mise en forme – sélecteurs – présentation
+
 20.	Définir Javascript
+
+        JavaScript (souvent abrégé JS) :
+        → C'est LE langage de programmation du web côté client (dans le navigateur)
+        → Il rend les pages web interactives et dynamiques
+        → Contrairement à HTML/CSS qui sont statiques, JavaScript peut réagir aux actions de l'utilisateur
+        → Il peut modifier le HTML et CSS en temps réel sans recharger la page
+
+        Analogie (suite) :
+
+        HTML = la structure de la maison
+        CSS = la décoration
+        JavaScript = l'électricité et la domotique (les interrupteurs, l'alarme, les portes automatiques)
+
+        MOTS CLÉS : JavaScript – interactivité – dynamique – client – événements – DOM – temps réel
+
 21.	Définir JSON. Dans quel contexte ce format est-il utilisé ? 
+
+        JSON (JavaScript Object Notation) :
+        → C'est un format de données léger pour échanger des informations entre systèmes
+        → C'est du texte simple, facile à lire pour les humains et les machines
+        → Même si ça vient de JavaScript, tous les langages peuvent l'utiliser (PHP, Python...)
+        → Structure basée sur des paires clé-valeur et des listes
+
+    MOTS CLÉS : JSON – format données – échange – API – clé-valeur – json_encode – json_decode
+
 22.	Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
+
+    Oui, c'est possible avec Node.js !
+    Node.js :
+    → C'est un environnement qui permet d'exécuter JavaScript sur le serveur (pas dans le navigateur)
+    → Avant Node.js, JavaScript ne fonctionnait que côté client
+    → Maintenant on peut faire du back-end en JavaScript, comme on fait avec PHP
+    → Créé en 2009, basé sur le moteur V8 de Chrome
+
+    MOTS CLÉS : Node.js – JavaScript serveur – back-end – V8 – Express – full-stack JavaScript
+
+
 23.	Qu’est-ce qu’un sélecteur CSS ?
+
+    Un sélecteur CSS :
+        C'est ce qui permet de "cibler" les éléments HTML qu'on veut styliser
+        C'est la partie qui vient AVANT les accolades dans le CSS
+        Ça dit au navigateur : "applique ce style à CET élément"
+
+            Types principaux :
+
+            Élément -> h1, p, div (tous les éléments de ce type)
+            Classe -> .nomclasse (peut être utilisé plusieurs fois)
+            ID -> #nomid (unique sur la page)
+            Universel -> * (TOUT sélectionner)
+
+            MOTS CLÉS : sélecteur – cibler – élément – classe (.) – id (#) – CSS
+
 24.	Quelle balise HTML permet de créer un lien hypertexte ?
+
+    C'est la balise <a> (anchor = ancre)
+
+    MOTS CLÉS : <a> – href – lien hypertexte – ancre – target – HTML
+
 25.	Qu’est-ce qu’une requête AJAX ?
+
+    AJAX (Asynchronous JavaScript And XML) :
+    → C'est une technique qui permet d'échanger avec le serveur SANS recharger la page
+    → JavaScript envoie une requête en arrière-plan et récupère la réponse
+    → La page se met à jour dynamiquement, sans le rechargement complet
+    → Aujourd'hui on utilise plus JSON que XML, mais le nom est resté
+    Avant AJAX :
+
+    Je clique sur "Voir plus" → toute la page se recharge
+    C'est lent et ça fait clignoter
+
+    Avec AJAX :
+
+    Je clique sur "Voir plus" → seule la partie concernée se met à jour
+    C'est fluide et rapide !
+
+    MOTS CLÉS : AJAX – sans recharger – asynchrone – JavaScript – dynamique – fetch – JSON
+
 26.	Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
-27.	Définir le responsive design
+
+    Pour sélectionner une classe → le point .
+
+    → Sélectionne TOUS les éléments avec class="maClasse"
+    → Peut être utilisé plusieurs fois sur la même page
+    Pour sélectionner un ID → le dièse #
+
+    → Sélectionne L'élément avec id="monId"
+    → Doit être unique sur la page (un seul élément)
+
+    MOTS CLÉS : classe → point (.) | ID → dièse (#) | sélecteur CSS
+
+27.	Définir le responsive design - V
+
+   Le responsive design, c'est faire en sorte qu'un site s'adapte à toutes les tailles d'écran 
+   de manière agréable et harmonieuse - ordinateur, tablette, téléphone.
+
+   Avec les media queries en CSS qui changent le style selon la taille
+   
+   MOTS CLÉS : responsive – s'adapter – toutes tailles d'écran – agréable – ordi/tablette/téléphone – media queries
+
+
 28.	Qu’est-ce que le templating ?
 29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
 30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
