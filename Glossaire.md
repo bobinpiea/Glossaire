@@ -13,42 +13,36 @@
 - [English](#english)
 
 ## Général
+
 1.	Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte
 
-        Pour exécuter un script PHP, il faut deux éléments essentiels :
-            1.	Un serveur web
-                → C’est un programme (comme Apache ou Nginx) qui reçoit les requêtes envoyées par un navigateur,
-                → traite la demande,
-                → puis renvoie le résultat (page HTML, image, JSON…).
+        Pour exécuter un script PHP, il faut un serveur web Apache qui gère PHP. 
+         
+        Laragon, WAMP -> Windows, 
+        MAMP -> MacOS, et 
+        LAMP -> Linux. 
+        Ces packs facilitent l’installation de tout l’environnement nécessaire.
 
-            Exemples de serveurs web :
-            •	Apache
-            •	Nginx
-
-            2.	Un interpréteur PHP
-                → C’est le programme qui lit le code PHP,
-                → Exécute les instructions,
-                → Produit un résultat (souvent en HTML) que le serveur web transmet ensuite au navigateur.
-
-        Logiciels qui regroupent tout cet environnement
-
-            Certains logiciels installent Apache + PHP + MySQL dans un seul pack, et permettent de lancer facilement un environnement local :
-                •	MAMP (Utilisé le plus souvent sur Mac)
-                •	XAMPP (Disponible sur Windows, macOS et Linux)
-
-        MOTS CLÉS :
-            •	Serveur web → reçoit – traite – renvoie
-            •	Interpréteur PHP → lit – exécute – génère
-            •	MAMP / XAMPP → environnement complet pour exécuter PHP en local
+        Mots-clés :
+            •	Serveur web Apache → gère PHP
+            •	Laragon, WAMP, MAMP, LAMP → packs serveur + PHP
 
 2.	Qu’est-ce qu’un algorithme ?  
 
-    Un algorithme, c’est une suite d’instructions (finies), qu’on suit étape par étape, dans un ordre logique/déterminé, afin de  résoudre un problème ou arriver à un résultat.
-    Il peut y avoir des boucles, des conditions… mais il doit toujours finir.
+   Un algorithme, c’est une suite finie d’instructions qu’on suit étape par étape, dans un ordre logique. 
+   Il sert à résoudre un problème ou à obtenir un résultat. 
+   Il peut y avoir des boucles ou des conditions, mais il doit toujours s’arrêter.
+        Exemple :
+        Recette de cuisine
+        1- Ingrédients
+        2- Ustensiles
+        3- Mélange
+        4- Préparation
 
-    Exemple : Recette de cuisine 1- Ingrédient 2- Ustensile 3-Melange 4-Préparation
-        
-        MOTS CLES : INSTRUCTION - ETAPE - PB ou RESULTAT
+            Mots-clés :
+                Instruction
+                Étape
+                Problème / Résultat
 
 3.	Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
 
@@ -56,44 +50,55 @@
         Elle peut contenir du texte, un nombre, une date, un tableau, etc.
         En PHP, toutes les variables commencent par le symbole $.
             
-            MOTS CLÉS : nom – donnée – mémoire – réutiliser / modifier – 
+            MOTS CLÉS : nom – donnée – mémoire – réutiliser / modifier 
 
 4.	Qu’est-ce que la portée d’une variable ?
 
-    La portée d’une variable, c’est l’endroit du code où elle “vit” et où on peut l’utiliser.
-        •	Si elle est déclarée en dehors d’une fonction, on dit qu’elle est globale.
-        •	Si elle est déclarée dans une fonction, elle est locale (visible uniquement dans cette fonction).
+    La portée d’une variable, c’est la zone du code où elle est définie et où on peut l’utiliser.
+        •	Si elle est déclarée en dehors d’un bloc (une fonction ou autre), elle est globale, accessible partout.
+        •	Si elle est déclarée dans un bloc (fonction, condition, boucle), elle est locale à ce bloc.
 
-    Et si on veut utiliser une variable globale à l’intérieur d’une fonction, on doit l’appeler avec le mot global au début de la fonction.
-        
-        MOTS CLÉS : portée – globale – locale – fonction – global
+    Pour utiliser une variable globale dans un bloc local, il faut la déclarer avec le mot-clé global.
+    
+    Mots-clés :
+        •	Portée
+        •	Globale
+        •	Locale
+        •	Bloc
+
 
 5.	Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
 
-    Une constante, c’est comme une variable : c’est un nom qu’on donne à une donnée.
-    Mais sa valeur ne change jamais : elle est fixe du début à la fin du script.
-    On ne met pas de $ devant une constante.
-    Et pour la créer, on utilise define() ou const.
+        Une constante, c’est un nom qu’on donne à une donnée dont la valeur ne change jamais pendant toute la durée du script.
+        Contrairement à une variable, la constante a une valeur fixe, on ne peut pas la modifier.
+        On ne met pas de  $  devant une constante comme pour les variables.
+        Pour créer une constante en PHP, on utilise soit la fonction  define() , soit le mot-clé  const .
 
-    MOTS CLÉS : constante – valeur fixe – pas de $ (– define – const – ≠ variable)
+        Mots-clés :
+            •	Constante
+            •	Valeur fixe
+            •	Pas de  $ 
+            •	define() 
+            •	const 
 
 6.	Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation 
 
-    Une superglobale, c’est une variable spéciale de PHP, qui est disponible partout dans le code (dans une fonction, une classe, etc.) sans avoir besoin de la déclarer.
+        Une superglobale, c’est une variable PHP toute prête à l’emploi, accessible n’importe où dans le code, même dans les fonctions ou classes, sans qu’on ait besoin de la déclarer.
+        C’est un tableau associatif qui contient des informations importantes ou utiles selon la situation.
 
-    Ces variables sont pré-définies par PHP, et elles servent à récupérer des infos importantes : données envoyées par un formulaire, paramètres dans l’URL, fichiers, session, cookies, etc.
+    Par exemple :
+        •	$_GET récupère les infos passées dans l’URL, comme un identifiant qui suit dans la barre d’adresse.
+        •	$_POST contient les données envoyées via un formulaire, souvent pour envoyer des infos au serveur.
+        •	$_SERVER donne plein de détails sur le serveur et la requête en cours, comme l’adresse IP ou les chemins des fichiers.
+        •	$_SESSION stocke des données persistantes, qui restent accessibles même quand on change de page.
+        •	$_COOKIE contient les petits fichiers stockés dans le navigateur, pour garder des préférences ou des infos d’identité.
+        •	$_FILES permet de gérer les fichiers qu’on envoie via un formulaire, comme les photos qu’on charge.
 
-    Il en existe 9 principales :
-	$_GET, $_POST, $_SESSION, $_COOKIE, $_SERVER, $_FILES, $_ENV, $_REQUEST, $_GLOBALS
-
-        Exemple d’utilisation :
-        echo $_GET['nom']; 
-
-        MOTS CLÉS :
-            •	Superglobale = variable spéciale PHP
-            •	Accessible partout
-            •	Pas besoin de déclaration
-            •	Sert à récupérer données ou infos système (GET, POST, etc.)
+    Mots-clés :
+    •	Superglobale → variable déjà dispo
+    •	Accessible partout
+    •	Tableau associatif
+    •	Exemples → $_GET, $_POST, $_SERVER, $_SESSION, $_COOKIE, $_FILES
 
 
 7.	Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
@@ -116,19 +121,19 @@
 
     Oui, en PHP, il existe plusieurs types de tableaux selon la façon dont les données sont organisées :
 
-    Tableau simple (ou indexé)
+    Tableau simple (ou indexé) ==> Indices numériques
     → Les éléments sont rangés dans un ordre, avec des indices numériques (0, 1, 2…)
      Ex: 
      $jours = ["lundi", "mardi", "mercredi"];
 
-	Tableau associatif
+    Tableau associatif ==>  Clé + Valeur
     → Chaque élément est associé à une clé personnalisée (au lieu d’un chiffre).
         $utilisateur = ["
             nom" => "Pierre", 
             "age" => 30
             ];
 
-	Tableau multidimensionnel (ou imbriqué)
+    Tableau multidimensionnel (ou imbriqué)
     → C’est un tableau dans un tableau, utile pour organiser des données complexes.
         $produits = [
             ["nom" => "Livre", "prix" => 10],
@@ -190,6 +195,10 @@
 
         MOTS CLÉS : condition – boucle – répétition – choix – if – for – while – switch
 
+        for : c’est une boucle qui répète un bloc de code un nombre précis de fois. Par exemple, afficher les nombres de 1 à 5.
+        while : boucle qui répète tant qu’une condition reste vraie. Par exemple, continuer à demander un nombre tant que la valeur n’est pas correcte.
+        break : sert à casser une boucle avant qu’elle ne soit terminée naturellement. Par exemple, sortir d’une recherche dès qu’on trouve l’élément.
+
 10.	Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
 
     strlen()
@@ -203,27 +212,31 @@
 
     MOTS CLÉS : longueur – chaîne – texte – strlen() – nombre de caractères
 
+    la fonction mb_strlen() qui compte les caractères correctement en UTF-8.
+
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
 
-    Une session, c'est un moyen de garder des informations sur un utilisateur pendant qu'il navigue sur notre site. 
-    PHP crée un identifiant unique pour chaque visiteur et peut stocker des données côté serveur qui restent accessibles d'une page à l'autre.
-    → Contrairement aux cookies (stockés chez le client), les sessions stockent les données sur le serveur.
-    Pour démarrer une session : session_start() (à mettre au tout début du script, avant tout HTML !)
+        Une session en PHP sert à garder des informations sur l’utilisateur pendant qu’il navigue de page en page sur un site,
+        sans tout stocker chez lui (contrairement aux cookies, ici tout reste côté serveur).
+        PHP crée un identifiant unique pour chaque visiteur, et avec la superglobale  $_SESSION , on peut mémoriser des infos comme le nom, l’email ou le panier.
+        Pour démarrer une session, il faut écrire  session_start();  tout en haut du script, avant d’utilise
 
     Ex: session_start();
         $_SESSION['nom'] = 'Paul';  // stocker une donnée
         echo $_SESSION['nom'];       // récupérer la donnée sur une autre page
 
-    Exemple concret : Quand Je me connectes sur Facebook, mes infos (nom, id...) sont stockées dans une session. 
+    Exemple : Quand Je me connectes sur Facebook, mes infos (nom, id...) sont stockées dans une session. 
     Comme ça je reste connecté en naviguant de page en page.
     
     MOTS CLÉS : session – session_start() – $_SESSION – stockage serveur – navigation   
 
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
 
-    Un cookie, c'est un petit fichier texte stocké dans le navigateur de l'utilisateur (côté client). 
-    Contrairement aux sessions (côté serveur), les cookies restent sur l'ordi/téléphone du visiteur, même après avoir fermé le navigateur.
-    → On s'en sert pour garder des préférences, un panier d'achat, ou reconnaître un utilisateur qui revient.
+        Un cookie, c’est un petit fichier texte que le site web demande au navigateur de stocker sur l’ordinateur ou le téléphone de l’utilisateur.
+        Ce fichier garde des infos comme ses préférences, sa langue choisie, ou un identifiant, pour que le site puisse se souvenir de lui quand il revient.
+        En PHP, on crée un cookie avec la fonction  setcookie() . 
+
+        setcookie('theme', 'sombre', time() + 86400, '/'); // cookie qui garde le thème sombre pendant 24h
 
     MOTS CLÉS : cookie – côté client – setcookie() – $_COOKIE – préférences – navigateur
 
@@ -267,16 +280,18 @@
 15.	Définir la partie « front-end » et « back-end » d’une application
 
     Front-end :
-    → C'est ce qu'on voit et ce avec quoi on interagit sur un site
-    → L'interface, le design, les menus, tout le côté visuel
-    → Langages : HTML, CSS, JavaScript
-    → La partie "visible" de l'application
+        → C'est ce qu'on voit et ce avec quoi on interagit sur un site
+        → L'interface, le design, les menus, tout le côté visuel
+        → Langages : HTML, CSS, JavaScript
+        → La partie "visible" de l'application
+
     Back-end :
-    → C'est ce qu'on ne voit pas, le cerveau de l'application
-    → Tout ce qui tourne sur le serveur : calculs, stockage, sécurité
-    → Langages : PHP, Python, Java, Node.js...
-    → La partie "invisible" qui fait fonctionner le tout
-    Exemple simple :
+        → C'est ce qu'on ne voit pas, le cerveau de l'application
+        → Tout ce qui tourne sur le serveur : calculs, stockage, sécurité
+        → Langages : PHP, Python, Java, Node.js...
+        → La partie "invisible" qui fait fonctionner le tout
+
+    Exemple :
     Quand on se connecte sur un site :
 
     Front : Le formulaire avec les champs login/mot de passe
@@ -291,10 +306,12 @@
         → C'est un système qui enregistre toutes les modifications de mon code au fil du temps
         → Je peux voir tout l'historique de mon projet depuis le début
         → Si je fais une erreur, je peux revenir à une version précédente qui fonctionnait
+
     Git :
         → C'est le logiciel de contrôle de version le plus populaire
         → Il permet de sauvegarder mon travail étape par étape
         → Je peux collaborer avec d'autres sans qu'on écrase le travail de chacun
+
     Exemple :
     Je développe un site web :
 
@@ -303,6 +320,7 @@
     Je peux facilement revenir à ma version stable d'avant
 
     Comparaison :
+
     C'est comme les points de sauvegarde dans un jeu → je sauvegarde avant un passage difficile pour pouvoir recommencer si besoin
     Commandes essentielles :
 
@@ -312,23 +330,26 @@
 
     MOTS CLÉS : contrôle de version – historique – Git – sauvegarde – collaboration – commit
 
+    Git est un exemple de système de contrôle de version décentralisé crée en 2005 par Linus Torvalds
+    (fondateur de Linux).
+
 17.	Qu’est-ce qu’un CMS ? Citer au moins 2 exemples
 
     Un CMS (Content Management System) :
-    → C'est un système de gestion de contenu en français
-    → C'est un logiciel qui permet de créer et gérer un site web sans coder
-    → Tout se fait avec une interface visuelle : j'ajoute du texte, des images, je crée des pages...
-    → Pas besoin de toucher au HTML/CSS/PHP, le CMS s'occupe de tout
+        → C'est un système de gestion de contenu en français
+        → C'est un logiciel qui permet de créer et gérer un site web sans coder
+        → Tout se fait avec une interface visuelle : j'ajoute du texte, des images, je crée des pages...
+        → Pas besoin de toucher au HTML/CSS/PHP, le CMS s'occupe de tout
     
     Exemples de CMS :
-    WordPress → Le plus populaire, 40% des sites web l'utilisent
-    Joomla → Plus complexe mais plus flexible
-    Drupal → Pour les gros sites avec beaucoup de contenu
-    Shopify → Spécialisé pour les boutiques en ligne
-    Wix → Super simple, tout se fait en glisser-déposer
+        WordPress → Le plus populaire, 40% des sites web l'utilisent
+        Joomla → Plus complexe mais plus flexible
+        Drupal → Pour les gros sites avec beaucoup de contenu
+        Shopify → Spécialisé pour les boutiques en ligne
+        Wix → Super simple, tout se fait en glisser-déposer
 
     Exemple :
-    Au lieu de coder mon blog from scratch, j'installe WordPress :
+        Au lieu de coder mon blog from scratch, j'installe WordPress :
 
     Je choisis un thème (le design)
     J'écris mes articles dans un éditeur (comme Word)
@@ -336,10 +357,12 @@
 
     Avantage : Rapide et facile pour créer un site
     Inconvénient : Moins de liberté qu'en codant tout soi-même
+
     MOTS CLÉS : CMS – gestion contenu – sans coder – WordPress – Joomla – interface visuelle
 
 
 ## Front-end
+
 18.	Définir HTML
 
     HTML (HyperText Markup Language) :
@@ -358,20 +381,20 @@
 19.	Définir CSS
 
         CSS (Cascading Style Sheets) :
-        → C'est le langage qui gère tout l'aspect visuel et la mise en forme d'une page web
-        → Il donne du style au HTML : couleurs, polices, tailles, espacements, animations...
-        → CSS sépare le contenu (HTML) de la présentation (le design)
-        → Une seule feuille CSS peut styliser tout un site
+            → C'est le langage qui gère tout l'aspect visuel et la mise en forme d'une page web
+            → Il donne du style au HTML : couleurs, polices, tailles, espacements, animations...
+            → CSS sépare le contenu (HTML) de la présentation (le design)
+            → Une seule feuille CSS peut styliser tout un site
 
         MOTS CLÉS : CSS – style – design – couleurs – mise en forme – sélecteurs – présentation
 
 20.	Définir Javascript
 
         JavaScript (souvent abrégé JS) :
-        → C'est LE langage de programmation du web côté client (dans le navigateur)
-        → Il rend les pages web interactives et dynamiques
-        → Contrairement à HTML/CSS qui sont statiques, JavaScript peut réagir aux actions de l'utilisateur
-        → Il peut modifier le HTML et CSS en temps réel sans recharger la page
+            → C'est LE langage de programmation du web côté client (dans le navigateur)
+            → Il rend les pages web interactives et dynamiques
+            → Contrairement à HTML/CSS qui sont statiques, JavaScript peut réagir aux actions de l'utilisateur
+            → Il peut modifier le HTML et CSS en temps réel sans recharger la page
 
         Analogie (suite) :
 
@@ -526,10 +549,10 @@ Une méthode, c’est une fonction écrite dans une classe.
 Elle sert à faire une action avec les données de l’objet (comme afficher, calculer, modifier…).
 
 MOTS-CLÉS :
-	•	Attribut = variable interne à la classe
-	•	Propriété = version accessible (via getter/setter)
-	•	Méthode = action d’un objet ou d’une classe
-	•	CLASSE = contient attributs + méthodes
+    •	Attribut = variable interne à la classe
+    •	Propriété = version accessible (via getter/setter)
+    •	Méthode = action d’un objet ou d’une classe
+    •	CLASSE = contient attributs + méthodes
     
 47.	Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité
 
