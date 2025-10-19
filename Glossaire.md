@@ -490,13 +490,106 @@
    MOTS CLÉS : responsive – s'adapter – toutes tailles d'écran – agréable – ordi/tablette/téléphone – media queries
 
 
-28.	Qu’est-ce que le templating ?
+28.	Qu’est-ce que le templating ? 
+
+
+Le templating, c'est utiliser des modèles de pages réutilisables où on sépare la structure HTML du contenu dynamique. Au lieu de répéter le même code partout, on crée un template et on injecte les données dedans."
+Exemple concret :
+"Un template pour tous les articles d'un blog : même structure, mais le titre et le texte changent selon l'article
+
+EXemple : 
+
+// Template
+<h1><?php echo $titre; ?></h1>
+<p><?php echo $contenu; ?></p>
+
+
+MOTS CLÉS : templating – modèles réutilisables – séparer structure/contenu – template – injection données
+
+
+
 29.	Qu’est-ce qu’une fonction anonyme en Javascript ?
+
+Une fonction anonyme en JavaScript, c'est une fonction qui n'a pas de nom. On l'utilise directement là où on en a besoin, souvent pour les événements ou les callbacks
+
+Pourquoi anonyme ?
+"Pas besoin de nom si on l'utilise qu'une seule fois à un endroit précis."
+MOTS CLÉS : fonction anonyme – sans nom – callback – événement – inline – fonction fléchée
+
+
 30.	Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
+
+La méthode push() ajoute un ou plusieurs éléments à la fin d'un tableau en JavaScript. Elle retourne la nouvelle longueur du tableau
+
+MOTS CLÉS : push() – ajouter fin – tableau – retourne longueur – JavaScript
+
+
 31.	Qu’est-ce qu’un « media query » ?
+
+Un media query, c'est une règle CSS qui applique des styles différents selon les caractéristiques de l'écran - taille, orientation, résolution. C'est l'outil principal du responsive design.
+
+MOTS CLÉS : media query – @media – CSS conditionnel – responsive – breakpoints – taille écran 
+
+
 32.	Qu’est-ce qu’un pseudo élément en CSS ?
+
+Un pseudo-élément CSS permet de styliser une partie spécifique d'un élément HTML sans toucher au HTML. On le reconnaît avec les deux doubles-points ::. Il crée comme un élément virtuel qu'on peut styliser
+
+Différence importante :
+
+:: (double) = pseudo-élément (partie d'élément)
+: (simple) = pseudo-classe (état d'élément, comme :hover)
+
+MOTS CLÉS : pseudo-élément – :: – before/after – partie élément – CSS – contenu virtuel
+
+
 33.	Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent
+
+Bootstrap est un framework CSS créé par Twitter qui fournit des styles et composants tout prêts pour créer rapidement des sites web responsive. On utilise ses classes prédéfinies plutôt que d'écrire tout le CSS soi-même
+
+Alternatives équivalentes :
+
+Tailwind CSS → classes utilitaires (plus flexible)
+Bulma → sans JavaScript
+Materialize → style Google Material
+Foundation → plus professionnel
+Semantic UI → noms de classes explicites
+
+Avantage : Rapide, déjà responsive
+
+Inconvénient : Tous les sites Bootstrap se ressemblent
+
+MOTS CLÉS : Bootstrap – framework CSS – classes prédéfinies – responsive – Tailwind 
+
+
 34.	Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes
+
+"Un formulaire HTML peut utiliser deux méthodes : GET ou POST pour envoyer les données au serveur."
+Différence principale :
+GET :
+
+Les données sont visibles dans l'URL
+Pour récupérer/lire des infos
+Limite de taille (environ 2000 caractères)
+On peut bookmarker l'URL
+Exemple : site.com/recherche.php?q=voiture&ville=paris
+
+POST :
+
+Les données sont cachées (dans le corps de la requête)
+Pour envoyer/modifier des données (connexion, inscription)
+Pas de limite de taille
+Plus sécurisé pour les données sensibles
+L'URL reste propre
+
+Règle simple :
+
+GET = pour chercher/afficher
+POST = pour envoyer/modifier
+
+MOTS CLÉS : GET – URL visible – lecture | POST – corps requête – envoi/modification – sécurisé
+
+
 
 ## UX UI
 35.	Quelle est la différence entre UX Design et UI Design ?
